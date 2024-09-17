@@ -1,6 +1,6 @@
 //exercice 1
 class Point {
-    
+
     //initialisation des attributs
     constructor(private abs:number, private ord:number){
 
