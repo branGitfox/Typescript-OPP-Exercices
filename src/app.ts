@@ -47,8 +47,35 @@ class Point {
 
 //exercice 2
 class Stagiaire {
+
+    //contructeur
     constructor(private nom:string, private notes:number[]){
         this.nom =nom
         this.notes=notes
     }
+
+    //getter de nom
+    getNom():string{
+        return this.nom
+    }
+
+    //getter de notes
+    getNotes():number[]{
+        return this.notes
+    }
+
+    //setter de nom
+    setNom(nom:string):void{
+        this.nom = nom
+
+    }
+
+    //setter de notes
+    setNotes(nom:string):void{
+        this.nom = nom
+        
+    }
+
+
+
 }

@@ -13,4 +13,8 @@ declare class Stagiaire {
     private nom;
     private notes;
     constructor(nom: string, notes: number[]);
+    getNom(): string;
+    getNotes(): number[];
+    setNom(nom: string): void;
+    setNotes(nom: string): void;
 }

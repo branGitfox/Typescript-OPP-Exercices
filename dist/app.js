@@ -39,10 +39,27 @@ class Point {
 class Stagiaire {
     nom;
     notes;
+    //contructeur
     constructor(nom, notes) {
         this.nom = nom;
         this.notes = notes;
         this.nom = nom;
         this.notes = notes;
+    }
+    //getter de nom
+    getNom() {
+        return this.nom;
+    }
+    //getter de notes
+    getNotes() {
+        return this.notes;
+    }
+    //setter de nom
+    setNom(nom) {
+        this.nom = nom;
+    }
+    //setter de notes
+    setNotes(nom) {
+        this.nom = nom;
     }
 }
