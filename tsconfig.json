@@ -1,0 +1,17 @@
+{
+    "compilerOptions":{
+        "outDir":"dist",
+        "target":"ESNext",
+        "strict":true,
+        "declaration":true,
+        "moduleResolution":"node"
+    },
+
+    "files":[
+        "src/app.ts"
+    ],
+
+    "include":[
+        "src/types/**/*"
+    ]
+}
