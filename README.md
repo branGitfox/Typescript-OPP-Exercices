@@ -1,5 +1,5 @@
 # Typescript OPP Practices
-I implemented some Typescript OPP exercices for leaning typescript.
+I implemented some Typescript OPP exercices for learning typescript.
 
 ## Those are the exercices i did
 ### `Exercice 1`
