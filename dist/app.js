@@ -82,7 +82,5 @@ class Stagiaire {
         return min;
     }
 }
-const stagiaire = new Stagiaire('Brandon', [12, 45]);
-console.log('====================================');
-console.log(stagiaire.trouverMax());
-console.log('====================================');
+class Formation {
+}

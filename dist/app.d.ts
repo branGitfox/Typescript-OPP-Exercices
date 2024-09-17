@@ -21,4 +21,5 @@ declare class Stagiaire {
     trouverMax(): number;
     trouverMin(): number;
 }
-declare const stagiaire: Stagiaire;
+declare class Formation {
+}

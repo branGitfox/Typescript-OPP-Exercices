@@ -95,15 +95,13 @@ class Stagiaire {
     //trouver la note minimale
     trouverMin():number{
         const min = this.getNotes().reduce((a, b) => Math.min(a, b), -Infinity)
-
         return min
     }
 
 
 }
 
-const stagiaire = new Stagiaire('Brandon', [12, 45])
 
-console.log('====================================')
-console.log(stagiaire.trouverMax());
-console.log('====================================')
+class Formation {
+    
+}
