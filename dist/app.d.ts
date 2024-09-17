@@ -17,4 +17,8 @@ declare class Stagiaire {
     getNotes(): number[];
     setNom(nom: string): void;
     setNotes(nom: string): void;
+    calculerMoyenne(): number;
+    trouverMax(): number;
+    trouverMin(): number;
 }
+declare const stagiaire: Stagiaire;

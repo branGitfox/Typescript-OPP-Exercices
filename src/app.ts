@@ -67,15 +67,43 @@ class Stagiaire {
     //setter de nom
     setNom(nom:string):void{
         this.nom = nom
-
     }
 
     //setter de notes
     setNotes(nom:string):void{
         this.nom = nom
-        
+    }
+
+    //methode pour calculer la moyenne
+    calculerMoyenne():number{
+        let nbrMatiere :number =  this.getNotes().length
+        let totalNotes:number =0
+         this.getNotes().forEach(note => {
+            totalNotes +=note
+        });
+
+        return totalNotes / nbrMatiere
+    }
+
+    //trouver la note maximale
+    trouverMax():number{
+      const max = this.getNotes().reduce((a, b) => Math.max(a, b), -Infinity)
+
+      return max
+    }
+
+    //trouver la note minimale
+    trouverMin():number{
+        const min = this.getNotes().reduce((a, b) => Math.min(a, b), -Infinity)
+
+        return min
     }
 
 
-
 }
+
+const stagiaire = new Stagiaire('Brandon', [12, 45])
+
+console.log('====================================')
+console.log(stagiaire.trouverMax());
+console.log('====================================')
