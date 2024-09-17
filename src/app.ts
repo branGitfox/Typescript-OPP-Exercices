@@ -1,4 +1,6 @@
+//exercice 1
 class Point {
+    
     //initialisation des attributs
     constructor(private abs:number, private ord:number){
 
@@ -41,8 +43,6 @@ class Point {
 
         return M
     }
-
-
 }
 
 //exercice 2
@@ -103,5 +103,5 @@ class Stagiaire {
 
 
 class Formation {
-    
+
 }

@@ -1,4 +1,5 @@
 "use strict";
+//exercice 1
 class Point {
     abs;
     ord;
