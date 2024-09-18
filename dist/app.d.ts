@@ -22,4 +22,19 @@ declare class Stagiaire {
     trouverMin(): number;
 }
 declare class Formation {
+    private intitule;
+    private nbrJours;
+    private stagiaire;
+    constructor(intitule: string, nbrJours: number, stagiaire: Stagiaire[]);
+    getIntitule(): string;
+    getNbrJour(): number;
+    getStagiaire(): Stagiaire[];
+    setIntitule(intl: string): void;
+    setNbrJours(nbrJours: number): void;
+    setStagiaire(stg: Stagiaire[]): void;
+    calculerMoyenneFormation(): number;
 }
+declare const stagiaire1: Stagiaire;
+declare const stagiaire2: Stagiaire;
+declare const stagiaire3: Stagiaire;
+declare const formation: Formation;

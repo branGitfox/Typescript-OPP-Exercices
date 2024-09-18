@@ -84,4 +84,57 @@ class Stagiaire {
     }
 }
 class Formation {
+    intitule;
+    nbrJours;
+    stagiaire;
+    //contructeur pour la formation
+    constructor(intitule, nbrJours, stagiaire) {
+        this.intitule = intitule;
+        this.nbrJours = nbrJours;
+        this.stagiaire = stagiaire;
+        this.intitule = intitule;
+        this.nbrJours = nbrJours;
+        this.stagiaire = stagiaire;
+    }
+    //getter pour l'intitule
+    getIntitule() {
+        return this.intitule;
+    }
+    //getter pout le nbrJours
+    getNbrJour() {
+        return this.nbrJours;
+    }
+    //getter pour les stagiaires
+    getStagiaire() {
+        return this.stagiaire;
+    }
+    //setter pour l'intitule
+    setIntitule(intl) {
+        this.intitule = intl;
+    }
+    //setter pout le nbrJours
+    setNbrJours(nbrJours) {
+        this.nbrJours = nbrJours;
+    }
+    //setter pour les stagiaires
+    setStagiaire(stg) {
+        this.stagiaire = stg;
+    }
+    calculerMoyenneFormation() {
+        let totalMoyenneStagiaire = 0;
+        this.stagiaire.map(stg => {
+            totalMoyenneStagiaire += stg.calculerMoyenne();
+        });
+        let nombreDeStagiaire = this.stagiaire.length;
+        return totalMoyenneStagiaire / nombreDeStagiaire;
+    }
 }
+//creation des stagiaires
+const stagiaire1 = new Stagiaire('Brandon', [15, 15, 15]);
+const stagiaire2 = new Stagiaire('Fidelin', [10, 15, 11]);
+const stagiaire3 = new Stagiaire('Ravomanana', [12, 13, 17]);
+//initialisation de la formation
+const formation = new Formation('Stage', 15, [stagiaire1, stagiaire2, stagiaire3]);
+console.log('====================================');
+console.log(formation.calculerMoyenneFormation());
+console.log('====================================');
